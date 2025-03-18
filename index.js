@@ -27,18 +27,18 @@ app.get('/', (req, res) => {
           }
         </style>
       </head>
-      <body> <!-- Fixed body tag -->
+      <body>
         <h1>Welcome to my Express App! 🚀</h1>
         <p>I hope you're having a great day! 🌟</p>
-       
         <footer>
           <p>Made with JavaScript</p>
         </footer>
-      </body> <!-- Added closing body tag -->
+      </body>
     </html>
   `);
 });
 
+// Keep the port as 8080
 const PORT = 8080;
 
 app.listen(PORT, () => {
