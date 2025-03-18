@@ -5,7 +5,7 @@ app.get('/', (req, res) => {
   res.send(`
     <html>
       <head>
-        <title>Welcome to My Awesome App!</title>
+        <title>Welcome to My Express App!</title>
         <style>
           body {
             font-family: Arial, sans-serif;
@@ -27,12 +27,20 @@ app.get('/', (req, res) => {
           }
         </style>
       </head>
-     </body>
+      <body> <!-- Fixed body tag -->
+        <h1>Welcome to my Express App! 🚀</h1>
+        <p>I hope you're having a great day! 🌟</p>
+       
+        <footer>
+          <p>Made with JavaScript</p>
+        </footer>
+      </body> <!-- Added closing body tag -->
     </html>
   `);
 });
-const PORT = 8080
+
+const PORT = 8080;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`)
-})
+  console.log(`Server running on port ${PORT}`);
+});
